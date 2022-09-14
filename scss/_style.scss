@@ -1,0 +1,39 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(76.93deg, #9072E5 -1.51%, #EB854C 95.92%);
+    box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
+
+    .heading {
+        color: #F9F9F9;
+        text-stroke: 1.5px #703af4;
+        -moz-text-stroke: 1.5px #703af4;
+        -webkit-text-stroke: 1.5px #703af4;
+        text-shadow: 4px 4px 0px rgba(63, 51, 89, 0.8);
+        padding-top: 56px;
+    }
+
+    .flipping-heading .text {
+        background: linear-gradient(89.88deg, #383451 13.34%, #5A4498 59.71%, #7B64BC 65.64%, #734BDD 71.81%, #7A43FF 90.77%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        line-height: 1;
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-archivo: "Archivo", sans-serif;
+
+$font-body: $font-archivo;
+
+$font-families: (
+    "archivo": "Archivo",
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}
