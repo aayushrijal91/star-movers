@@ -1,4 +1,4 @@
-// AOS.init({ duration: 1500 });
+AOS.init({ duration: 1000 });
 
 document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -11,7 +11,7 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
 });
 
 $(() => {
-    $('.flipping-heading').slick({
+    $('#flipping-heading').slick({
         slidesToScroll: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -21,7 +21,36 @@ $(() => {
         autoplaySpeed: 1200,
         speed: 900,
     });
-})
+
+    $('#brands-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
+    $('#cta-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+    });
+
+    AOS.refresh();
+
+    let controller = new ScrollMagic.Controller();
+
+    let timeline = new TimelineMax();
+
+    timeline.to('#banner-box-1', 6, { y: -100 })
+        .to('#banner-box-2', 6, { y: -400 }, '-=6');
+
+    let scene = new ScrollMagic.Scene({
+        triggerElement: 'header',
+        duration: '200%',
+        triggerHook: 0
+    })
+        .setTween(timeline)
+        .addTo(controller);
+});
 
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {

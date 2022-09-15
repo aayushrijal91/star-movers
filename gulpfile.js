@@ -24,11 +24,11 @@ function scripts() {
         './node_modules/jquery/dist/jquery.min.js',
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
         'node_modules/slick-carousel/slick/slick.min.js',
-        // './node_modules/aos/dist/aos.js',
+        './node_modules/aos/dist/aos.js',
         'scripts/gsap.min.js',
-        // 'scripts/TextPlugin.min.js',
-        'scripts/EasePack.min.js',
-        'scripts/ScrollTrigger.min.js',
+        'scripts/TweenMax.min.js',
+        'scripts/ScrollMagic.min.js',
+        'scripts/animation.gsap.js',
         'scripts/main.js',
     ];
 

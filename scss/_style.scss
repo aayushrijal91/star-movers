@@ -9,6 +9,7 @@ header {
     align-items: center;
     background: linear-gradient(76.93deg, #9072E5 -1.51%, #EB854C 95.92%);
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
+    position: relative;
 
     .heading {
         color: #F9F9F9;
@@ -27,6 +28,170 @@ header {
         text-fill-color: transparent;
         line-height: 1;
     }
+
+    .btn {
+        border-radius: 1px;
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: $white;
+        font-size: 1.25rem;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        width: 100%;
+        text-transform: uppercase;
+
+        &.btn-1 {
+            background: imgUrl('btn-glare.png') #FF842A;
+            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px rgba(181, 82, 11, 0.5), inset 0px 0px 4px 1px rgba(255, 171, 111, 0.7);
+            background-size: cover;
+        }
+
+        &.btn-2 {
+            background: imgUrl('btn-glare.png') #7C49F8;
+            background-size: cover;
+            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px #331777, inset 0px 0px 4px 1px #A27CFF;
+        }
+    }
+
+    .banner-box-1 {
+        position: absolute;
+        left: 1rem;
+        bottom: -4px;
+    }
+
+    .banner-box-2 {
+        position: absolute;
+        right: 0;
+        bottom: -10rem;
+        z-index: 100;
+    }
+}
+
+section.participating-brands {
+    background: #FF842A;
+    padding: 13px 0;
+
+    .brands-slider {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+section.about-us {
+    background: imgUrl('about-us-box.png') #D9D9D9;
+
+    .about-us-container {
+        padding: 234px 0;
+        background: imgUrl('about-us-star.png') center;
+
+        .heading {
+            background: linear-gradient(180deg, #7C49F8 13.38%, #FF842A 150.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            line-height: 1.21;
+        }
+
+        .description p {
+            font-weight: 500;
+            color: #737373;
+            line-height: 1.4;
+            font-size: 1rem;
+            margin-bottom: 24px !important;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+section.cta {
+    background: imgUrl('cta.png');
+    background-size: cover;
+    padding: 106px 0 64px;
+    position: relative;
+
+    .cta-slider {
+        .slick-slide {
+            margin: 0 13px;
+
+            &.top-margin {
+                margin-top: 188px;
+            }
+        }
+
+        .cta-slider-content {
+            height: 540px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 15px 39px;
+            text-align: center;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 169.5px;
+                border: 2px solid transparent;
+                background: linear-gradient(#7C49F8, #FF842A, #7C49F8) border-box;
+                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient($white 0 0);
+                -webkit-mask-composite: destination-out;
+                mask-composite: exclude;
+            }
+
+            .heading {
+                background: linear-gradient(180deg, #7C49F8 13.38%, #FF842A 150.7%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                line-height: 1;
+            }
+
+            .description {
+                color: #737373;
+                font-weight: 600;
+                font-size: 1rem;
+                padding-top: 47px;
+            }
+        }
+    }
+
+    .cta-box-1 {
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+    }
+
+    .cta-box-2 {
+        position: absolute;
+        right: 0;
+        bottom: -4rem;
+        z-index: 100;
+    }
+}
+
+section.exclusive-deals {
+    padding: 112px 0 146px;
 }
 
 footer {
