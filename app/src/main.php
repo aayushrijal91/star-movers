@@ -78,18 +78,22 @@ include __DIR__ . '/header.php';
             <div class="cta-slider-content">
                 <div class="heading fs-3">Best Prices in Sydney</div>
                 <div class="description">We will provide you with the lowest price possible and we will beat any genuine and reasonable quote.</div>
+                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content top-margin">
                 <div class="heading fs-3">Team of Expert Movers</div>
                 <div class="description">We have a highly trained team of movers looking after your move, as we treat your furniture and assets with utmost care.</div>
+                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content">
                 <div class="heading fs-3">Latest Equipment</div>
                 <div class="description">All our trucks are equipped with the latest equipment to help you transport your assets safely to your new home.</div>
+                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content top-margin">
                 <div class="heading fs-3">Boxes & Wrap</div>
                 <div class="description">Our packaging specialists will pack and wrap everything that you desire for safe travel between your destinations.</div>
+                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
         </div>
     </div>
@@ -103,7 +107,88 @@ include __DIR__ . '/header.php';
 
 <section class="exclusive-deals">
     <div class="container">
-        <?= renderImg('exclusive-deals-heading.png', 'lib') ?>
+        <?= renderImg('exclusive-deals-heading.png', 'lib', 'pb-8') ?>
+
+        <div class="row justify-content-center">
+            <div class="col-xxl-10">
+                <div class="deals-wrapper">
+                    <?= renderImg("small-move.jpg", 'lib', "w-100") ?>
+                    <a href="#" class="btn">Claim Now</a>
+                </div>
+                <div class="deals-wrapper mt-8">
+                    <?= renderImg("large-move.jpg", 'lib', "w-100") ?>
+                    <a href="#" class="btn">Claim Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="container">
+        <form action="./src/form" class="" method="post">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <div class="heading fs-2">
+                        <div>No Stress,</div>
+                        <div class="d-flex align-items-center">No Panic <div class="gradient-line ms-3"></div></div>
+                        <div>Just a Smooth Move!</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-wrapper">
+                        <div class="form-heading purple">
+                            Your move
+                        </div>
+                        <div class="row py-6 form-row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="pickup_address" placeholder="Pick up address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="dropoff_address" placeholder="Drop off address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" name="date" placeholder="Pick up address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" name="dropoff_address" placeholder="Drop off address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form-heading orange">
+                            Your details
+                        </div>
+                        <div class="row py-6 form-row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" placeholder="Full name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone no." required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 pt-4">
+                    <button class="form-control" type="submit">Get Free Quote</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="testimonials-wrapper">
+        <div class="container">
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
