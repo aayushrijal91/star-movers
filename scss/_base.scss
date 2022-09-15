@@ -14,6 +14,50 @@ body {
     outline: 0;
 }
 
+.orange-btn {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $white;
+    font-size: 1.25rem;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    background: imgUrl('btn-glare.png') $secondary1;
+    box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px rgba(181, 82, 11, 0.5), inset 0px 0px 4px 1px rgba(255, 171, 111, 0.7);
+    background-size: cover;
+    border: 3px solid rgba(255, 171, 111, 0.7);
+
+    &:hover {
+        color: rgba(255, 171, 111, 0.8) !important;
+    }
+}
+
+.purple-btn {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $white;
+    font-size: 1.25rem;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    background: imgUrl('btn-glare.png') $primary1;
+    background-size: cover;
+    box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px #331777, inset 0px 0px 4px 1px #A27CFF;
+    border: 3px solid #A27CFF;
+
+    &:hover {
+        color: #A27CFF;
+    }
+}
+
 // Rounded buttons
 @for $i from 1 through 10 {
     .rounded-#{$i} {

@@ -34,6 +34,12 @@ $(() => {
         arrows: false,
     });
 
+    $("#testimonials-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        arrows: false
+    })
+
     AOS.refresh();
 
     let controller = new ScrollMagic.Controller();

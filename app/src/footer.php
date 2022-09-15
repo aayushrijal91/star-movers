@@ -1,8 +1,8 @@
 <footer>
 	<div class="container">
 		<div class="row justify-content-center justify-content-lg-between align-items-center">
-			<div class="col-auto">
-				<div class="row gx-2 gx-md-3 text-white justify-content-center">
+			<div class="col">
+				<div class="row gx-2 gx-md-3 text-grey2">
 					<div class="col-12 text-center pb-3 d-lg-none">
 						<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 							<?= renderImg("aiims.png", "logo") ?>
@@ -16,7 +16,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-auto d-none d-lg-block">
+			<div class="col-auto">
+				<?= renderImg("footer-logo.png", "logo") ?>
+			</div>
+			<div class="col d-none d-lg-block text-end">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 					<?= renderImg("aiims.png", "logo") ?>
 				</a>

@@ -24,10 +24,10 @@ include __DIR__ . '/header.php';
             <div class="col-md-9 col-lg-7">
                 <div class="row">
                     <div class="col">
-                        <a href="#" class="btn btn-1">Exploring Services</a>
+                        <a href="#" class="btn orange-btn">Exploring Services</a>
                     </div>
                     <div class="col">
-                        <a href="#" class="btn btn-2">Get Free Quote</a>
+                        <a href="#" class="btn purple-btn">Get Free Quote</a>
                     </div>
                 </div>
             </div>
@@ -113,11 +113,11 @@ include __DIR__ . '/header.php';
             <div class="col-xxl-10">
                 <div class="deals-wrapper">
                     <?= renderImg("small-move.jpg", 'lib', "w-100") ?>
-                    <a href="#" class="btn">Claim Now</a>
+                    <a href="#" class="btn orange-btn">Claim Now</a>
                 </div>
                 <div class="deals-wrapper mt-8">
                     <?= renderImg("large-move.jpg", 'lib', "w-100") ?>
-                    <a href="#" class="btn">Claim Now</a>
+                    <a href="#" class="btn orange-btn">Claim Now</a>
                 </div>
             </div>
         </div>
@@ -131,7 +131,8 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-6">
                     <div class="heading fs-2">
                         <div>No Stress,</div>
-                        <div class="d-flex align-items-center">No Panic <div class="gradient-line ms-3"></div></div>
+                        <div class="d-flex align-items-center">No Panic <div class="gradient-line ms-3"></div>
+                        </div>
                         <div>Just a Smooth Move!</div>
                     </div>
                 </div>
@@ -173,7 +174,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
                 <div class="col-lg-7 pt-4">
-                    <button class="form-control" type="submit">Get Free Quote</button>
+                    <button class="form-control btn purple-btn" type="submit">Get Free Quote</button>
                 </div>
             </div>
         </form>
@@ -183,10 +184,82 @@ include __DIR__ . '/header.php';
 <section class="testimonials">
     <div class="testimonials-wrapper">
         <div class="container">
-            <div class="testimonials-slider">
+            <div class="testimonials-slider" id="testimonials-slider">
                 <div class="testimonial-card">
-                    
+                    <?= renderImg("testimonial-stars.png", 'icons') ?>
+                    <div class="heading fs-3 py-4">
+                        Michelle Norman
+                    </div>
+                    <div class="description">
+                        “Excellent service 2 very friendly young chaps, thorough and professional and efficient, highly reccomend”
+                    </div>
                 </div>
+                <div class="testimonial-card margin-top">
+                    <?= renderImg("testimonial-stars.png", 'icons') ?>
+                    <div class="heading fs-3 py-4">
+                        Moris<br> Marsh
+                    </div>
+                    <div class="description">
+                        “Amazing service provided...I find most removalists complain and the team that were sent never complained once. They were fantastic and nothing was too much trouble. I definitely recommend Star Movers”
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <?= renderImg("testimonial-stars.png", 'icons') ?>
+                    <div class="heading fs-3 py-4">
+                        Abhilash Balakrishnan
+                    </div>
+                    <div class="description">
+                        “Very professional. The team came right on time and completed the work in a very efficient and quick way. They were welcome to suggestions and additional requirements...Highly recommend Star Movers to anyone”
+                    </div>
+                </div>
+                <div class="testimonial-card margin-top">
+                    <?= renderImg("testimonial-stars.png", 'icons') ?>
+                    <div class="heading fs-3 py-4">
+                        Sudipto Ghosh
+                    </div>
+                    <div class="description">
+                        “Star Movers have done splendid job of moving our household items. They were humble and very friendly throughout the job hours. They went extra mile to ensure that all our items are moved properly without any damage. I highly recommend their service.”
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <?= renderImg("testimonial-stars.png", 'icons') ?>
+                    <div class="heading fs-3 py-4">
+                        Ilona<br>Zentai
+                    </div>
+                    <div class="description">
+                        “Highly recommend. These guys came to our rescue when our other removalist cancelled on us last minute due to COVID-19 restrictions. Very friendly, very efficient. Extremely quick to move our furniture.”
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-4 px-xxl-5">
+                        <div class="heading fs-2">Removals in Sydney for over 15 years</div>
+                    </div>
+                    <div class="col-lg-5 px-xxl-4">
+                        <div class="description">
+                            Star Movers has been doing Removals in Sydney for over 15 years and highly prioritise on training our staff to deliver quality and professional services to our customers. Our Business ethics and foundations is built on making sure that our customers have a stress-less and care-free experience with Star Movers. This is shown in our strong reviews over the past years. We go above and beyond for our customers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto"><?= renderImg("google-reviews.png", "lib") ?></div>
+            <div class="col-auto">
+                <div>
+                    <a href="#" class="btn orange-btn px-5">Leave a Review</a>
+                </div>
+                <div class="text-italic text-center fs-4 pt-4 text-grey2">It really helps us!</div>
+            </div>
+            <div class="col-3">
+                <div class="happy-customers">153+ Happy Customers</div>
             </div>
         </div>
     </div>

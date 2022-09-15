@@ -7,55 +7,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(76.93deg, #9072E5 -1.51%, #EB854C 95.92%);
+    background: linear-gradient(76.93deg, $primary6 -1.51%, $secondary3 95.92%);
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
     position: relative;
 
     .heading {
-        color: #F9F9F9;
-        text-stroke: 1.5px #703af4;
-        -moz-text-stroke: 1.5px #703af4;
-        -webkit-text-stroke: 1.5px #703af4;
+        color: $light3;
+        text-stroke: 1.5px $primary2;
+        -moz-text-stroke: 1.5px $primary2;
+        -webkit-text-stroke: 1.5px $primary2;
         text-shadow: 4px 4px 0px rgba(63, 51, 89, 0.8);
         padding-top: 56px;
     }
 
     .flipping-heading .text {
-        background: linear-gradient(89.88deg, #383451 13.34%, #5A4498 59.71%, #7B64BC 65.64%, #734BDD 71.81%, #7A43FF 90.77%);
+        background: linear-gradient(89.88deg, $dark2 13.34%, $primary7 59.71%, $primary8 65.64%, $primary4 71.81%, $primary3 90.77%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
         line-height: 1;
-    }
-
-    .btn {
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        color: $white;
-        font-size: 1.25rem;
-        height: 64px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 600;
-        width: 100%;
-        text-transform: uppercase;
-
-        &.btn-1 {
-            background: imgUrl('btn-glare.png') #FF842A;
-            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px rgba(181, 82, 11, 0.5), inset 0px 0px 4px 1px rgba(255, 171, 111, 0.7);
-            background-size: cover;
-            border: 3px solid rgba(255, 171, 111, 0.7);
-
-        }
-
-        &.btn-2 {
-            background: imgUrl('btn-glare.png') #7C49F8;
-            background-size: cover;
-            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px #331777, inset 0px 0px 4px 1px #A27CFF;
-            border: 3px solid #A27CFF;
-        }
     }
 
     .banner-box-1 {
@@ -73,7 +44,7 @@ header {
 }
 
 section.participating-brands {
-    background: #FF842A;
+    background: $secondary1;
     padding: 13px 0;
 
     .brands-slider {
@@ -91,14 +62,14 @@ section.participating-brands {
 }
 
 section.about-us {
-    background: imgUrl('about-us-box.png') #D9D9D9;
+    background: imgUrl('about-us-box.png') $light1;
 
     .about-us-container {
         padding: 234px 0;
         background: imgUrl('about-us-star.png') center;
 
         .heading {
-            background: linear-gradient(180deg, #7C49F8 13.38%, #FF842A 150.7%);
+            background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -108,7 +79,7 @@ section.about-us {
 
         .description p {
             font-weight: 500;
-            color: #737373;
+            color: $grey1;
             line-height: 1.4;
             font-size: 1rem;
             margin-bottom: 24px !important;
@@ -154,14 +125,14 @@ section.cta {
                 bottom: 0;
                 border-radius: 169.5px;
                 border: 2px solid transparent;
-                background: linear-gradient(#7C49F8, #FF842A, #7C49F8) border-box;
-                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient($white 0 0);
+                background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                -webkit-mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
                 -webkit-mask-composite: destination-out;
                 mask-composite: exclude;
             }
 
             .heading {
-                background: linear-gradient(180deg, #7C49F8 13.38%, #FF842A 150.7%);
+                background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -170,7 +141,7 @@ section.cta {
             }
 
             .description {
-                color: #737373;
+                color: $grey1;
                 font-weight: 600;
                 font-size: 1rem;
                 padding-top: 47px;
@@ -229,7 +200,7 @@ section.exclusive-deals {
         &::before {
             position: absolute;
             content: "";
-            background: #29213E;
+            background: $dark1;
             height: 100%;
             border-radius: 3px;
             width: 100%;
@@ -248,34 +219,21 @@ section.exclusive-deals {
             position: absolute;
             left: 43%;
             bottom: 98px;
-            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            color: $white;
-            font-size: 1.25rem;
-            height: 64px;
             padding-left: 65px;
             padding-right: 65px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 600;
-            text-transform: uppercase;
-            background: imgUrl('btn-glare.png') #FF842A;
-            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px rgba(181, 82, 11, 0.5), inset 0px 0px 4px 1px rgba(255, 171, 111, 0.7);
-            background-size: cover;
             z-index: 50;
-            border: 3px solid rgba(255, 171, 111, 0.7);
+            width: auto;
         }
     }
 }
 
 section.form {
-    background: #F2F2F2;
+    background: $light2;
     padding: 122px 0 143px;
 
     .heading {
         div {
-            background: linear-gradient(89.11deg, #7C49F8 13.16%, #FF842A 82.95%);
+            background: linear-gradient(89.11deg, $primary1 13.16%, $secondary1 82.95%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -284,7 +242,7 @@ section.form {
             .gradient-line {
                 height: 4px;
                 width: 249px;
-                background: linear-gradient(90deg, #B8649B 0%, #FF852B 103.61%);
+                background: linear-gradient(90deg, $primary9 0%, $secondary2 103.61%);
             }
         }
     }
@@ -299,8 +257,8 @@ section.form {
                 position: relative;
 
                 &.purple {
-                    color: #8165B7;
-                    border-bottom: 1px solid #8165B7;
+                    color: $primary5;
+                    border-bottom: 1px solid $primary5;
 
                     &::before {
                         position: absolute;
@@ -314,8 +272,8 @@ section.form {
                 }
 
                 &.orange {
-                    color: #FF842A;
-                    border-bottom: 1px solid #FF842A;
+                    color: $secondary1;
+                    border-bottom: 1px solid $secondary1;
 
                     &::before {
                         position: absolute;
@@ -335,17 +293,17 @@ section.form {
 
             input {
                 height: 57px;
-                background: #787878;
+                background: $grey2;
                 box-shadow: inset 0px 0px 14px rgba(0, 0, 0, 0.18);
                 border-radius: 3px;
                 border: 0;
                 padding: 4px 24px;
-                color: #f2f2f2;
+                color: $light2;
 
                 &::placeholder {
                     font-size: 1rem;
                     line-height: 1;
-                    color: #f2f2f2;
+                    color: $light2;
                 }
             }
 
@@ -353,40 +311,39 @@ section.form {
         }
 
         button {
-            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            color: $white;
-            font-size: 1.25rem;
-            height: 64px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 600;
-            width: 100%;
-            text-transform: uppercase;
-            background: imgUrl('btn-glare-form.png') #7C49F8;
-            background-size: cover;
-            box-shadow: 1px 1px 4px rgba(55, 55, 55, 0.2), inset 0px 0px 2px #331777, inset 0px 0px 4px 1px #A27CFF;
-            border: 3px solid #A27CFF;
+            background: imgUrl('btn-glare-form.png') $primary1;
         }
     }
 }
 
 section.testimonials {
-    background: #d9d9d9;
+    background: linear-gradient($light2 0 54px, $light1 54px 100%);
+    padding-bottom: 74px;
 
     .testimonials-wrapper {
-        margin-top: -28px;
-
         .testimonials-slider {
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-slide {
+                margin: 28px 10px 0;
+                height: 447px;
+
+                &.margin-top {
+                    margin-top: 94px;
+                }
+            }
+
             .testimonial-card {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                padding: 15px 39px;
+                padding: 100px 11px;
                 text-align: center;
+                transition: 0.2s all ease-in-out;
 
                 &::after {
                     content: "";
@@ -397,21 +354,79 @@ section.testimonials {
                     bottom: 0;
                     border-radius: 169.5px;
                     border: 2px solid transparent;
-                    background: linear-gradient(#7C49F8, #FF842A, #7C49F8) border-box;
-                    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient($white 0 0);
+                    background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                    -webkit-mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
                     -webkit-mask-composite: destination-out;
                     mask-composite: exclude;
                 }
+
+                .heading {
+                    background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    line-height: 1;
+                }
+
+                .description {
+                    color: $grey1;
+                    font-weight: 600;
+                    font-size: 0.8125rem;
+                }
+
+                &:hover {
+                    transform: translateY(-20px);
+                }
             }
+        }
+    }
+
+    .timeline {
+        padding: 83px 0 63px;
+
+        .heading {
+            background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .description {
+            color: $grey1;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .happy-customers {
+        font-size: 1.25rem;
+        color: $primary5;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $primary5;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: imgUrl('purple-star.png', 'icons');
+            width: 56px;
+            height: 62px;
+            top: 17px;
+            right: 0;
         }
     }
 }
 
 footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
-
+    font-size: 1rem;
+    padding: 30px 0;
+    
     @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+        font-size: 0.875rem;
     }
 }
