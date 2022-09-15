@@ -1,5 +1,15 @@
-@function imgUrl($file, $path: "background"){
-@return url("../images/" + $path + "/" + $file) no-repeat;
+.sticky-nav {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background: linear-gradient(180deg, #874EE7 0%, #FF842A 100%);
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    padding: 15px 17px;
 }
 
 header {
@@ -425,7 +435,7 @@ section.testimonials {
 footer {
     font-size: 1rem;
     padding: 30px 0;
-    
+
     @include media-breakpoint-down(sm) {
         font-size: 0.875rem;
     }

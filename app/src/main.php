@@ -3,6 +3,12 @@ include __DIR__ . '/../functions.php';
 include __DIR__ . '/header.php';
 ?>
 
+<div class="sticky-nav">
+    <?= renderImg("nav-logo.png", 'logo', 'pb-4') ?>
+    <a href="tel:<?= $phone_number ?>" class="py-2"><?= renderImg("call-btn.png", "icons") ?></a>
+    <a href="#form" class="py-2"><?= renderImg("quote-btn.png", "icons") ?></a>
+</div>
+
 <header>
     <div class="container text-center">
         <?= renderImg("logo.png", "logo") ?>
