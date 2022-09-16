@@ -13,7 +13,7 @@
 }
 
 header {
-    height: 100vh;
+    padding: 113px 0 188px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,41 @@ section.exclusive-deals {
     }
 }
 
+section.removal-type {
+    background-color: $light1;
+    padding: 174px 0 300px;
+
+    .removal-type-card {
+        background: linear-gradient(79.26deg, #7C49F8 0%, #F88D36 101.18%);
+        box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        color: $white;
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            -webkit-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            background-color: $white;
+
+            span {
+                background: linear-gradient(90deg, #7C49F8 13.38%, #FF842A 150.7%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+                padding: 39px 4px;
+                font-weight: 500;
+            }
+        }
+
+        .cta-circle {
+            width: 112px;
+        }
+    }
+}
+
 section.form {
+    position: relative;
     background: $light2;
     padding: 122px 0 143px;
 
@@ -329,6 +363,7 @@ section.form {
 section.testimonials {
     background: linear-gradient($light2 0 54px, $light1 54px 100%);
     padding-bottom: 74px;
+    position: relative;
 
     .testimonials-wrapper {
         .testimonials-slider {
@@ -433,8 +468,10 @@ section.testimonials {
 }
 
 footer {
+    position: relative;
     font-size: 1rem;
     padding: 30px 0;
+    background: $white;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.875rem;

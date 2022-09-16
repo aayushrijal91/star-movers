@@ -56,6 +56,36 @@ $(() => {
     })
         .setTween(timeline)
         .addTo(controller);
+
+
+    const cards = gsap.utils.toArray(".removal-type-card");
+    let cardsHeight = 0;
+    cards.forEach(card => {
+        cardsHeight += $(card).height();
+    });
+    cards.forEach((card, index) => {
+        const tween = gsap.to(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: `top 10%`,
+                end: `top 10%`,
+                scrub: true,
+                pin: true,
+                invalidateOnRefresh: true
+            },
+            ease: "slow.inOut",
+            scale: () => 1 - (cards.length - index) * 0.0025
+        });
+
+        ScrollTrigger.create({
+            trigger: card,
+            start: "top 10%",
+            pin: index === (cards.length) ? false : true,
+            end: 'max',
+            pinSpacing: false,
+            invalidateOnRefresh: true
+        });
+    });
 });
 
 $(window).on('scroll', () => {

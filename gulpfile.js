@@ -28,6 +28,7 @@ function scripts() {
         'scripts/gsap.min.js',
         'scripts/TweenMax.min.js',
         'scripts/ScrollMagic.min.js',
+        'scripts/ScrollTrigger.min.js',
         'scripts/animation.gsap.js',
         'scripts/main.js',
     ];
