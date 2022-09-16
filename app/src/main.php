@@ -9,6 +9,8 @@ include __DIR__ . '/header.php';
     <a href="#form" class="py-2"><?= renderImg("quote-btn.png", "icons") ?></a>
 </div>
 
+<div class="shutter"></div>
+
 <header>
     <div class="container text-center">
         <?= renderImg("logo.png", "logo") ?>

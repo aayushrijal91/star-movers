@@ -59,10 +59,7 @@ $(() => {
 
 
     const cards = gsap.utils.toArray(".removal-type-card");
-    let cardsHeight = 0;
-    cards.forEach(card => {
-        cardsHeight += $(card).height();
-    });
+
     cards.forEach((card, index) => {
         const tween = gsap.to(card, {
             scrollTrigger: {
@@ -101,3 +98,41 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+function preventDefault(e) {
+    e.preventDefault();
+}
+
+
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () { supportsPassive = true; }
+    }));
+} catch (e) { }
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+}
+
+// call this to Enable
+function enableScroll() {
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+}
+
+disableScroll();
+
+function toggleShutter() {
+    $('.shutter').toggleClass("shutter_raise");
+    enableScroll();
+}
+
+setTimeout(toggleShutter, 3000);
