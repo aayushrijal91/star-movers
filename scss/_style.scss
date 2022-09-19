@@ -68,7 +68,7 @@ header {
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
     position: relative;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xxl) {
         padding: 113px 0 550px;
     }
 
@@ -121,7 +121,7 @@ header {
         bottom: -10rem;
         z-index: 100;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             display: none;
         }
     }
@@ -160,7 +160,7 @@ section.participating-brands {
 }
 
 section.about-us {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         background: imgUrl('about-us-box.png') $light1;
     }
 
@@ -383,7 +383,7 @@ section.removal-type {
     padding: 148px 0 300px;
     overflow-y: hidden;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         padding: 174px 0 300px;
         max-height: 4542px;
     }
@@ -405,7 +405,7 @@ section.removal-type {
         color: $white;
 
         .removal-type-card-inner {
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
                 padding: 48px 48px 0;
             }
 
@@ -559,7 +559,7 @@ section.testimonials {
                 margin: 28px 10px 0;
                 height: 447px;
 
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(xl) {
                     &.margin-top {
                         margin-top: 94px;
                     }

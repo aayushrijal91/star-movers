@@ -28,6 +28,15 @@ $(() => {
         arrows: false,
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 4,
+                    centerMode: true,
+                    centerPadding: "20px",
+                    autoplay: true,
+                }
+            },
+            {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 3,
@@ -53,7 +62,7 @@ $(() => {
         arrows: false,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
                     centerMode: true,
@@ -76,6 +85,14 @@ $(() => {
         slidesToScroll: 1,
         arrows: false,
         responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: "20px"
+                }
+            },
             {
                 breakpoint: 900,
                 settings: {
