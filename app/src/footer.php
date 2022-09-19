@@ -4,7 +4,7 @@
 			<div class="col-4 d-lg-none text-center">
 				<?= renderImg("footer-logo.png", "logo") ?>
 			</div>
-			<div class="col-12 col-lg py-4 py-lg-0">
+			<div class="col-12 col-lg-auto py-4 py-lg-0">
 				<div class="row gx-2 gx-md-3 text-grey2 justify-content-center">
 					<div class="col-auto text-center">Copyright <?= date('Y') ?></div>
 					<div class="col-auto">|</div>

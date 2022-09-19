@@ -490,7 +490,7 @@ include __DIR__ . '/header.php';
                 <div class="col-12 col-md-5 d-lg-none">
                     <div class="happy-customers">153+ Happy Customers</div>
                 </div>
-                <div class="col-lg-8 pt-6 pt-lg-0">
+                <div class="col-12 pt-6 pt-lg-0">
                     <div class="row align-items-center justify-content-around">
                         <div class="col-lg-4 px-xxl-5" data-aos="fade-right">
                             <div class="heading fs-2">Removals in Sydney for over 15 years</div>
