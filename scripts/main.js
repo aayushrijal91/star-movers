@@ -26,18 +26,49 @@ $(() => {
         slidesToShow: 6,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: "20px",
+                    autoplay: true,
+                }
+            }
+        ]
     });
 
     $('#cta-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "20px"
+                }
+            }
+        ]
     });
 
     $("#testimonials-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: "20px"
+                }
+            }
+        ]
     })
 
     AOS.refresh();
@@ -64,8 +95,8 @@ $(() => {
         const tween = gsap.to(card, {
             scrollTrigger: {
                 trigger: card,
-                start: `top 10%`,
-                end: `top 10%`,
+                start: `top 5%`,
+                end: `top 5%`,
                 scrub: true,
                 pin: true,
                 invalidateOnRefresh: true
@@ -76,7 +107,7 @@ $(() => {
 
         ScrollTrigger.create({
             trigger: card,
-            start: "top 10%",
+            start: "top 5%",
             pin: index === (cards.length) ? false : true,
             end: 'max',
             pinSpacing: false,

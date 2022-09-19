@@ -2,7 +2,7 @@
     position: fixed;
     top: 50px;
     right: 0;
-    background: linear-gradient(180deg, #874EE7 0%, #FF842A 100%);
+    background: linear-gradient(180deg, #874EE7 0%, $secondary1 100%);
     border-radius: 8px 0px 0px 8px;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,28 @@
     align-items: center;
     z-index: 100000;
     padding: 15px 17px;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.sticky-nav-mobile {
+    background: linear-gradient(90deg, #874EE7 0%, $secondary1 100%);
+    padding: 9px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+    
+    .mobile-icons {
+        width: 40px;
+    }
 }
 
 .shutter {
@@ -31,6 +53,10 @@
     height: 100%;
     top: 0;
     right: 8rem;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
 }
 
 header {
@@ -42,6 +68,16 @@ header {
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+        padding: 80px 0 250px;
+    }
+
+    .logo {
+        @include media-breakpoint-down(sm) {
+            width: 100px;
+        }
+    }
+
     .heading {
         color: $light3;
         text-stroke: 1.5px $primary2;
@@ -49,6 +85,11 @@ header {
         -webkit-text-stroke: 1.5px $primary2;
         text-shadow: 4px 4px 0px rgba(63, 51, 89, 0.8);
         padding-top: 56px;
+
+        @include media-breakpoint-down(sm) {
+            line-height: 1;
+            padding-top: 36px;
+        }
     }
 
     .flipping-heading .text {
@@ -64,6 +105,10 @@ header {
         position: absolute;
         left: 1rem;
         bottom: -4px;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 
     .banner-box-2 {
@@ -71,6 +116,20 @@ header {
         right: 0;
         bottom: -10rem;
         z-index: 100;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .banner-boxes-sm {
+        position: absolute;
+        width: 100%;
+        bottom: -0.5rem;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
     }
 }
 
@@ -88,16 +147,26 @@ section.participating-brands {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include media-breakpoint-down(sm) {
+                margin: 0 10px;
+            }
         }
     }
 }
 
 section.about-us {
-    background: imgUrl('about-us-box.png') $light1;
+    @include media-breakpoint-up(md) {
+        background: imgUrl('about-us-box.png') $light1;
+    }
 
     .about-us-container {
-        padding: 234px 0;
-        background: imgUrl('about-us-star.png') center;
+        padding: 85px 50px;
+
+        @include media-breakpoint-up(md) {
+            padding: 234px 16px;
+            background: imgUrl('about-us-star.png') center;
+        }
 
         .heading {
             background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
@@ -106,6 +175,11 @@ section.about-us {
             background-clip: text;
             text-fill-color: transparent;
             line-height: 1.21;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 2.2rem !important;
+                padding-bottom: 34px;
+            }
         }
 
         .description p {
@@ -128,17 +202,22 @@ section.cta {
     padding: 106px 0 64px;
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+        padding: 109px 0 242px;
+    }
+
     .cta-slider {
         .slick-slide {
             margin: 0 13px;
 
             &.top-margin {
-                margin-top: 188px;
+                @include media-breakpoint-up(md) {
+                    margin-top: 188px;
+                }
             }
         }
 
         .cta-slider-content {
-            height: 540px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -146,6 +225,11 @@ section.cta {
             position: relative;
             padding: 15px 39px;
             text-align: center;
+            height: 540px;
+
+            @include media-breakpoint-down(sm) {
+                height: 504px;
+            }
 
             &::after {
                 content: "";
@@ -210,6 +294,10 @@ section.cta {
         position: absolute;
         left: 0;
         bottom: -1rem;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 
     .cta-box-2 {
@@ -217,11 +305,29 @@ section.cta {
         right: 0;
         bottom: -4rem;
         z-index: 100;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .cta-boxes-sm {
+        position: absolute;
+        right: 0;
+        bottom: -9rem;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
     }
 }
 
 section.exclusive-deals {
     padding: 112px 0 146px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 159px 0 108px;
+    }
 
     .deals-wrapper {
         position: relative;
@@ -260,9 +366,13 @@ section.exclusive-deals {
 
 section.removal-type {
     background-color: $light1;
-    padding: 174px 0 300px;
-    max-height: 4542px;
+    padding: 148px 0 300px;
     overflow-y: hidden;
+
+    @include media-breakpoint-up(md) {
+        padding: 174px 0 300px;
+        max-height: 4542px;
+    }
 
     .wheel-wrapper {
         position: absolute;
@@ -279,6 +389,12 @@ section.removal-type {
         box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.12);
         border-radius: 5px;
         color: $white;
+
+        .removal-type-card-inner {
+            @include media-breakpoint-down(sm) {
+                padding: 24px 24px 0;
+            }
+        }
 
         .vertical-text {
             writing-mode: vertical-rl;
@@ -306,9 +422,17 @@ section.removal-type {
 section.form {
     position: relative;
     background: $light2;
-    padding: 122px 0 143px;
+    padding-bottom: 48px;
+
+    @include media-breakpoint-up(md) {
+        padding: 122px 0 143px;
+    }
 
     .heading {
+        @include media-breakpoint-down(sm) {
+            padding: 74px 0;
+        }
+
         div {
             background: linear-gradient(89.11deg, $primary1 13.16%, $secondary1 82.95%);
             -webkit-background-clip: text;
@@ -318,8 +442,17 @@ section.form {
 
             .gradient-line {
                 height: 4px;
-                width: 249px;
                 background: linear-gradient(90deg, $primary9 0%, $secondary2 103.61%);
+                width: 249px;
+
+                @include media-breakpoint-down(sm) {
+                    width: 150px;
+                }
+            }
+
+            @include media-breakpoint-down(sm) {
+                line-height: 1.17;
+                font-size: 2.18rem !important;
             }
         }
     }
@@ -408,8 +541,10 @@ section.testimonials {
                 margin: 28px 10px 0;
                 height: 447px;
 
-                &.margin-top {
-                    margin-top: 94px;
+                @include media-breakpoint-up(md) {
+                    &.margin-top {
+                        margin-top: 94px;
+                    }
                 }
             }
 
@@ -445,12 +580,17 @@ section.testimonials {
                     background-clip: text;
                     text-fill-color: transparent;
                     line-height: 1;
+                    font-size: 2.1875rem; // 35px
                 }
 
                 .description {
                     color: $grey1;
                     font-weight: 600;
                     font-size: 0.8125rem;
+
+                    @include media-breakpoint-down(sm) {
+                        padding: 0 30px;
+                    }
                 }
 
                 &:hover {
@@ -461,7 +601,11 @@ section.testimonials {
     }
 
     .timeline {
-        padding: 83px 0 63px;
+        padding: 42px 0;
+
+        @include media-breakpoint-up(md) {
+            padding: 83px 0 63px;
+        }
 
         .heading {
             background: linear-gradient(180deg, $primary1 13.38%, $secondary1 150.7%);
@@ -470,6 +614,11 @@ section.testimonials {
             background-clip: text;
             text-fill-color: transparent;
             line-height: 1;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 45px !important;
+                padding-bottom: 35px;
+            }
         }
 
         .description {
@@ -496,6 +645,10 @@ section.testimonials {
             height: 62px;
             top: 17px;
             right: 0;
+
+            @include media-breakpoint-down(sm) {
+                left: 0;
+            }
         }
     }
 }
