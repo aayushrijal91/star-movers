@@ -62,7 +62,7 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="banner-boxes-sm">
-        <?= renderImg('banner-boxes-sm.png', 'lib') ?>
+        <?= renderImg('banner-boxes-sm.png', 'lib', "w-100") ?>
     </div>
 </header>
 
@@ -184,122 +184,122 @@ include __DIR__ . '/header.php';
         <div class="removal-type-wrapper">
             <div class="removal-type-card" style="top: 10px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">01/06</div>
                         </div>
                     </div>
-                    <div class="col-auto d-none d-md-block"><?= renderImg("removal-1.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
-                        <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                    <div class="col-auto d-none d-lg-block"><?= renderImg("removal-1.png", "lib") ?></div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
+                        <div class="pt-4 py-lg-4">
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Furniture removals</div>
                             <div class="fs-5 fw-300 fw-md-600 py-4 py-md-5 pe-xxl-6">We can assist you in taking apart your heavy furniture and packing your entire house for the move. We will ensure that all your furniture is packed and secured properly so that no damages occur during the transportation process. We will also help you unpack and put your heavy furniture together at your new home.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
-                <?= renderImg('removal-1-sm.png', 'lib', 'w-100 d-md-none') ?>
+                <?= renderImg('removal-1-sm.png', 'lib', 'w-100 w-md-auto d-lg-none') ?>
             </div>
 
             <div class="removal-type-card" style="top: 30px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">02/06</div>
                         </div>
                     </div>
-                    <div class="col-auto d-none d-md-block"><?= renderImg("removal-2.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
+                    <div class="col-auto d-none d-lg-block"><?= renderImg("removal-2.png", "lib") ?></div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
                         <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Office moves</div>
                             <div class="fs-5 fw-600 py-4 py-md-5 pe-xxl-6">Business Relocations can be quite complicated, but Star Movers can provide you with a start-to-end service that will tailor for all your requirements. We will make sure that all the furniture and IT equipment are packed and transported without and damages. Our team is here to help you with every aspect of your move including managing your commercial relocations.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
-                <?= renderImg('removal-2-sm.png', 'lib', 'w-100 d-md-none') ?>
+                <?= renderImg('removal-2-sm.png', 'lib', 'w-100 d-lg-none') ?>
             </div>
 
             <div class="removal-type-card" style="top: 50px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">03/06</div>
                         </div>
                     </div>
-                    <div class="col-auto d-none d-md-block"><?= renderImg("removal-3.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
-                        <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                    <div class="col-auto d-none d-lg-block"><?= renderImg("removal-3.png", "lib") ?></div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
+                        <div class="pt-4 py-lg-4">
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Interstate removals</div>
                             <div class="fs-5 fw-600 py-4 py-md-5 pe-xxl-6">It’s not an easy job to move and relocate yourself, neither across or within your city boundaries. When moving to another state, there is so much to think about. We will take all the stress and chaos of your move and let you only experience the excitement in moving. We can have everything unpacked and the furniture put together according to you requirements, before you arrive at your new location.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
-                <?= renderImg('removal-3-sm.png', 'lib', 'w-100 d-md-none') ?>
+                <?= renderImg('removal-3-sm.png', 'lib', 'w-100 d-lg-none') ?>
             </div>
 
             <div class="removal-type-card" style="top: 70px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">04/06</div>
                         </div>
                     </div>
-                    <div class="col-auto d-none d-md-block"><?= renderImg("removal-4.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
-                        <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                    <div class="col-auto d-none d-lg-block"><?= renderImg("removal-4.png", "lib") ?></div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
+                        <div class="pt-4 py-lg-4">
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Waste removals</div>
                             <div class="fs-5 fw-600 py-4 py-md-5 pe-xxl-6">Star Movers provide a complete house clean-up service and remove any waste or rubbish that need to be disposed of. We will take all your unwanted furniture and waste to a dump for you. Your house wastes are most likely made of plastic, wood, and many things that has great potential in being recycled. If you throw it away in a regular trash bin, it’ll be a waste of recyclable material and bad for your environment.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
@@ -308,64 +308,64 @@ include __DIR__ . '/header.php';
 
             <div class="removal-type-card" style="top: 90px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">05/06</div>
                         </div>
                     </div>
                     <div class="col-auto"><?= renderImg("removal-5.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
-                        <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
+                        <div class="pt-4 py-lg-4">
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Boxes & wrapping</div>
                             <div class="fs-5 fw-600 py-5 pe-xxl-6">Star Movers provide packing and unpacking services during your move. In packing, we make sure to pay attention to every details and that nothing is left behind. Also, we will wrap fragile materials with bubble wraps and papers for extra care and insurance. We’re also experts in handling electronic devices. We make sure to separate all devices so it won’t rub against each other and break one another.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
-                <?= renderImg('removal-5-sm.png', 'lib', 'w-100 d-md-none') ?>
+                <?= renderImg('removal-5-sm.png', 'lib', 'w-100 d-lg-none') ?>
             </div>
 
             <div class="removal-type-card" style="top: 110px">
                 <div class="row removal-type-card-inner">
-                    <div class="col-12 d-md-none">
+                    <div class="col-12 d-lg-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
                             <div class="col-auto fs-2 fw-300 line-height-1">06/06</div>
                         </div>
                     </div>
                     <div class="col-auto"><?= renderImg("removal-6.png", "lib") ?></div>
-                    <div class="col-md-5 h-inherit d-flex align-items-center">
-                        <div class="pt-4 py-md-4">
-                            <div class="fs-4 fw-300 d-none d-md-block">Our specialities</div>
+                    <div class="col-lg-5 h-inherit d-flex align-items-center">
+                        <div class="pt-4 py-lg-4">
+                            <div class="fs-4 fw-300 d-none d-lg-block">Our specialities</div>
                             <div class="fs-2 fw-300 line-height-1 py-1">Storage services</div>
                             <div class="fs-5 fw-600 py-5 pe-xxl-6">If you require a storage solution while you wait to move to your new location or waiting on renovations to finish before you move in. Then Star Moves has the solution for you. We will provide a professional storage service that will ensure a stress-free move and peace of mind knowing that your valuables are store d in a secured place.</div>
                             <div class="d-flex">
                                 <a href="#form" class="btn orange-btn w-auto px-6">Get Quote</a>
                             </div>
-                            <div class="row align-items-center pt-6 d-none d-md-flex">
+                            <div class="row align-items-center pt-6 d-none d-lg-flex">
                                 <div class="col-auto fs-3 fw-300">We guarantee...</div>
                                 <div class="col-auto"><?= renderImg("planned-prepared.png", "lib", 'cta-circle') ?></div>
                                 <div class="col-auto"><?= renderImg("fixed-pricing-only.png", "lib", 'cta-circle') ?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit vertical-text d-none d-md-block">
+                    <div class="col-auto h-inherit vertical-text d-none d-lg-block">
                         <span>Services done by experts</span>
                     </div>
                 </div>
-                <?= renderImg('removal-6-sm.png', 'lib', 'w-100 d-md-none') ?>
+                <?= renderImg('removal-6-sm.png', 'lib', 'w-100 d-lg-none') ?>
             </div>
         </div>
     </div>
@@ -486,11 +486,11 @@ include __DIR__ . '/header.php';
     </div>
     <div class="timeline">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 d-md-none">
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-12 col-md-5 d-lg-none">
                     <div class="happy-customers">153+ Happy Customers</div>
                 </div>
-                <div class="col-lg-8 pt-6 pt-md-0">
+                <div class="col-lg-8 pt-6 pt-lg-0">
                     <div class="row align-items-center justify-content-around">
                         <div class="col-lg-4 px-xxl-5" data-aos="fade-right">
                             <div class="heading fs-2">Removals in Sydney for over 15 years</div>
@@ -514,7 +514,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <div class="text-italic text-md-center fs-4 pt-4 text-grey2">It really helps us!</div>
             </div>
-            <div class="col-md-3 d-none d-md-block">
+            <div class="col-md-3 d-none d-lg-block">
                 <div class="happy-customers">153+ Happy Customers</div>
             </div>
         </div>

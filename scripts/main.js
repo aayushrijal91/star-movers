@@ -28,12 +28,20 @@ $(() => {
         arrows: false,
         responsive: [
             {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+                    centerMode: true,
+                    centerPadding: "20px",
+                    autoplay: true,
+                }
+            },
+            {
                 breakpoint: 540,
                 settings: {
                     slidesToShow: 2,
                     centerMode: true,
                     centerPadding: "20px",
-                    autoplay: true,
                 }
             }
         ]
@@ -44,6 +52,14 @@ $(() => {
         slidesToScroll: 1,
         arrows: false,
         responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: "20px"
+                }
+            },
             {
                 breakpoint: 540,
                 settings: {
@@ -60,6 +76,14 @@ $(() => {
         slidesToScroll: 1,
         arrows: false,
         responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    centerPadding: "20px"
+                }
+            },
             {
                 breakpoint: 540,
                 settings: {
@@ -124,11 +148,11 @@ $(() => {
             end: '+=12000'
         }
     })
-    .to('.wheel', {
-        rotation: -360*1,
-        duration: 1,
-        ease: 'none'
-    })
+        .to('.wheel', {
+            rotation: -360 * 1,
+            duration: 1,
+            ease: 'none'
+        })
 });
 
 $(window).on('scroll', () => {
@@ -174,11 +198,11 @@ function enableScroll() {
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
 }
 
-disableScroll();
+// disableScroll();
 
-function toggleShutter() {
-    $('.shutter').toggleClass("shutter_raise");
-    enableScroll();
-}
+// function toggleShutter() {
+//     $('.shutter').toggleClass("shutter_raise");
+//     enableScroll();
+// }
 
-setTimeout(toggleShutter, 3000);
+// setTimeout(toggleShutter, 3000);

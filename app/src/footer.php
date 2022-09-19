@@ -1,10 +1,10 @@
 <footer>
 	<div class="container">
 		<div class="row justify-content-center justify-content-lg-between align-items-center">
-			<div class="col-4 d-md-none text-center">
+			<div class="col-4 d-lg-none text-center">
 				<?= renderImg("footer-logo.png", "logo") ?>
 			</div>
-			<div class="col-12 col-md py-4 py-md-0">
+			<div class="col-12 col-lg py-4 py-lg-0">
 				<div class="row gx-2 gx-md-3 text-grey2 justify-content-center">
 					<div class="col-auto text-center">Copyright <?= date('Y') ?></div>
 					<div class="col-auto">|</div>
@@ -14,10 +14,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-auto d-none d-md-block">
+			<div class="col-auto d-none d-lg-block">
 				<?= renderImg("footer-logo.png", "logo") ?>
 			</div>
-			<div class="col-4 col-md-auto text-center">
+			<div class="col-4 col-lg-auto text-center">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 					<?= renderImg("aiims.png", "logo") ?>
 				</a>

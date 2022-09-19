@@ -68,6 +68,10 @@ header {
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
     position: relative;
 
+    @include media-breakpoint-down(lg) {
+        padding: 113px 0 550px;
+    }
+
     @include media-breakpoint-down(sm) {
         padding: 80px 0 250px;
     }
@@ -106,7 +110,7 @@ header {
         left: 1rem;
         bottom: -4px;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             display: none;
         }
     }
@@ -117,7 +121,7 @@ header {
         bottom: -10rem;
         z-index: 100;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             display: none;
         }
     }
@@ -127,7 +131,7 @@ header {
         width: 100%;
         bottom: -0.5rem;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             display: none;
         }
     }
@@ -156,7 +160,7 @@ section.participating-brands {
 }
 
 section.about-us {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         background: imgUrl('about-us-box.png') $light1;
     }
 
@@ -164,8 +168,11 @@ section.about-us {
         padding: 85px 50px;
 
         @include media-breakpoint-up(md) {
-            padding: 234px 16px;
             background: imgUrl('about-us-star.png') center;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            padding: 234px 16px;
         }
 
         .heading {
@@ -176,9 +183,12 @@ section.about-us {
             text-fill-color: transparent;
             line-height: 1.21;
 
+            @include media-breakpoint-down(md) {
+                padding-bottom: 34px;
+            }
+
             @include media-breakpoint-down(sm) {
                 font-size: 2.2rem !important;
-                padding-bottom: 34px;
             }
         }
 
@@ -202,6 +212,10 @@ section.cta {
     padding: 106px 0 64px;
     position: relative;
 
+    @include media-breakpoint-down(lg) {
+        padding: 109px 0 442px;
+    }
+
     @include media-breakpoint-down(sm) {
         padding: 109px 0 242px;
     }
@@ -211,7 +225,7 @@ section.cta {
             margin: 0 13px;
 
             &.top-margin {
-                @include media-breakpoint-up(md) {
+                @include media-breakpoint-up(lg) {
                     margin-top: 188px;
                 }
             }
@@ -369,7 +383,7 @@ section.removal-type {
     padding: 148px 0 300px;
     overflow-y: hidden;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: 174px 0 300px;
         max-height: 4542px;
     }
@@ -391,6 +405,10 @@ section.removal-type {
         color: $white;
 
         .removal-type-card-inner {
+            @include media-breakpoint-down(lg) {
+                padding: 48px 48px 0;
+            }
+
             @include media-breakpoint-down(sm) {
                 padding: 24px 24px 0;
             }
@@ -424,12 +442,12 @@ section.form {
     background: $light2;
     padding-bottom: 48px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: 122px 0 143px;
     }
 
     .heading {
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             padding: 74px 0;
         }
 
@@ -541,7 +559,7 @@ section.testimonials {
                 margin: 28px 10px 0;
                 height: 447px;
 
-                @include media-breakpoint-up(md) {
+                @include media-breakpoint-up(lg) {
                     &.margin-top {
                         margin-top: 94px;
                     }
@@ -615,6 +633,11 @@ section.testimonials {
             text-fill-color: transparent;
             line-height: 1;
 
+            @include media-breakpoint-down(lg) {
+                font-size: 45px !important;
+                padding-bottom: 35px;
+            }
+
             @include media-breakpoint-down(sm) {
                 font-size: 45px !important;
                 padding-bottom: 35px;
@@ -646,7 +669,7 @@ section.testimonials {
             top: 17px;
             right: 0;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 left: 0;
             }
         }
