@@ -83,6 +83,21 @@ $(() => {
             invalidateOnRefresh: true
         });
     });
+
+    let rotate = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".wheel-wrapper",
+            pin: true,
+            scrub: 0.2,
+            start: 'top top',
+            end: '+=12000'
+        }
+    })
+    .to('.wheel', {
+        rotation: -360*1,
+        duration: 1,
+        ease: 'none'
+    })
 });
 
 $(window).on('scroll', () => {

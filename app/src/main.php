@@ -63,7 +63,10 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="about-us">
+<section class="about-us position-relative">
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
     <div class="container about-us-container">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-right">
@@ -80,7 +83,11 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="cta">
+<section class="cta position-relative">
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
+
     <div class="container">
         <div class="cta-slider" id="cta-slider">
             <div class="cta-slider-content">
@@ -113,7 +120,11 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="exclusive-deals">
+<section class="exclusive-deals position-relative">
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
+
     <div class="container">
         <?= renderImg('exclusive-deals-heading.png', 'lib', 'pb-8') ?>
 
@@ -132,7 +143,15 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="removal-type">
+<section class="removal-type position-relative">
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
+
+    <div class="wheel-wrapper">
+        <?= renderImg('wheel.png', 'lib', 'wheel') ?>
+    </div>
+
     <div class="container">
         <div class="removal-type-wrapper">
             <div class="removal-type-card" style="top: 10px">
@@ -158,7 +177,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-    
+
             <div class="removal-type-card" style="top: 30px">
                 <div class="row">
                     <div class="col-auto"><?= renderImg("removal-2.png", "lib") ?></div>
@@ -182,7 +201,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-    
+
             <div class="removal-type-card" style="top: 50px">
                 <div class="row">
                     <div class="col-auto"><?= renderImg("removal-3.png", "lib") ?></div>
@@ -206,7 +225,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-    
+
             <div class="removal-type-card" style="top: 70px">
                 <div class="row">
                     <div class="col-auto"><?= renderImg("removal-4.png", "lib") ?></div>
@@ -230,7 +249,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-    
+
             <div class="removal-type-card" style="top: 90px">
                 <div class="row">
                     <div class="col-auto"><?= renderImg("removal-5.png", "lib") ?></div>
@@ -254,7 +273,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-    
+
             <div class="removal-type-card" style="top: 110px">
                 <div class="row">
                     <div class="col-auto"><?= renderImg("removal-6.png", "lib") ?></div>
@@ -282,7 +301,11 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="form" id="form">
+<section class="form position-relative" id="form">
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
+
     <div class="container">
         <form action="./src/form" class="" method="post">
             <div class="row justify-content-center align-items-center">

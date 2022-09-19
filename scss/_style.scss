@@ -26,6 +26,13 @@
     transition: 0.5s all;
 }
 
+.marquee-truck {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 8rem;
+}
+
 header {
     padding: 113px 0 188px;
     display: flex;
@@ -254,6 +261,18 @@ section.exclusive-deals {
 section.removal-type {
     background-color: $light1;
     padding: 174px 0 300px;
+    max-height: 4542px;
+    overflow-y: hidden;
+
+    .wheel-wrapper {
+        position: absolute;
+        top: 0;
+        left: -45%;
+
+        @include media-breakpoint-down(xxl) {
+            display: none;
+        }
+    }
 
     .removal-type-card {
         background: linear-gradient(79.26deg, #7C49F8 0%, #F88D36 101.18%);
