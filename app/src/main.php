@@ -21,12 +21,12 @@ include __DIR__ . '/header.php';
     </div>
 </div>
 
-<!-- <div class="shutter"></div> -->
+<div class="shutter"></div>
 
 <header>
     <div class="container text-center position-relative" style="z-index: 100;">
         <?= renderImg("logo.png", "logo", "logo") ?>
-        <h1 class="heading fs-1">Five start treatment for</h1>
+        <h1 class="heading fs-1">Five star treatment for</h1>
         <div class="flipping-heading" id="flipping-heading">
             <div class="fs-1 text">interstate removal</div>
             <div class="fs-1 text">waste removal</div>
@@ -397,10 +397,10 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="row py-6 form-row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="pickup_address" placeholder="Pick up address" required>
+                                <input type="text" class="form-control" id="pickUpAddress" name="pickup_address" placeholder="Pick up address" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="dropoff_address" placeholder="Drop off address" required>
+                                <input type="text" class="form-control" id="dropOffAddress" name="dropoff_address" placeholder="Drop off address" required>
                             </div>
                             <div class="col-6">
                                 <input type="date" class="form-control" name="date" placeholder="Pick up address" required>

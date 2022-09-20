@@ -20,7 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
+        $date = $_POST['date'];
+        $numberof_rooms = $_POST['numberof_rooms'];
+        $pickup_address = $_POST['pickup_address'];
+        $dropoff_address = $_POST['dropoff_address'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -57,8 +60,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<td><b>' . strip_tags($email) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
+            '<td>Pick Up Address</td>' .
+            '<td><b>' . strip_tags($pickup_address) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Drop off Address</td>' .
+            '<td><b>' . strip_tags($dropoff_address) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Move Date</td>' .
+            '<td><b>' . strip_tags($date) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Number Of Rooms</td>' .
+            '<td><b>' . strip_tags($numberof_rooms) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 

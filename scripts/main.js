@@ -218,11 +218,30 @@ function enableScroll() {
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
 }
 
-// disableScroll();
+disableScroll();
 
-// function toggleShutter() {
-//     $('.shutter').toggleClass("shutter_raise");
-//     enableScroll();
-// }
+function toggleShutter() {
+    $('.shutter').toggleClass("shutter_raise");
+    enableScroll();
+}
 
-// setTimeout(toggleShutter, 3000);
+setTimeout(toggleShutter, 3000);
+
+let autocompleteFrom;
+let autocompleteTo;
+
+function initPlaces() {
+    if ($('#pickUpAddress').length) {
+        autocompleteFrom = new google.maps.places.Autocomplete(
+            document.getElementById('pickUpAddress'),
+            { types: ['geocode'] }
+        );
+    }
+
+    if ($('#dropOffAddress').length) {
+        autocompleteTo = new google.maps.places.Autocomplete(
+            document.getElementById('dropOffAddress'),
+            { types: ['geocode'] }
+        );
+    }
+};

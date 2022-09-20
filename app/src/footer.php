@@ -32,6 +32,8 @@
 		</svg>
 	</div>
 </a>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8N9i5YyuTGykpTMLWFa5gNjwoWpO45j0&#038;libraries=places&#038;callback=initPlaces" async defer></script>
 <script type="text/javascript" src="./assets/js/app.js?v=0.3"></script>
 </body>
 

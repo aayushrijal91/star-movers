@@ -3,9 +3,9 @@ include __DIR__ . '/env.php';
 
 $site = "Star Movers";
 $phone_number = "1300 512 629";
-$admin_email = 'arijal@aiims.com.au';
+$admin_email = 'info@starmover.com.au';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@starmover.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
