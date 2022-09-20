@@ -283,6 +283,9 @@ section.cta {
                 border-radius: 169.5px;
                 border: 2px solid transparent;
                 background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                -webkit-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                -moz-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                -o-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
                 -webkit-mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
                 -webkit-mask-composite: destination-out;
                 mask-composite: exclude;
@@ -615,6 +618,9 @@ section.testimonials {
                     border-radius: 169.5px;
                     border: 2px solid transparent;
                     background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                    -webkit-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                    -moz-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
+                    -o-background: linear-gradient($primary1, $secondary1, $primary1) border-box;
                     -webkit-mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
                     -webkit-mask-composite: destination-out;
                     mask-composite: exclude;
