@@ -225,7 +225,7 @@ function toggleShutter() {
     enableScroll();
 }
 
-setTimeout(toggleShutter, 3000);
+setTimeout(toggleShutter, 2000);
 
 let autocompleteFrom;
 let autocompleteTo;
@@ -245,3 +245,23 @@ function initPlaces() {
         );
     }
 };
+
+$('.sticky-nav-btn').on('click', function () {
+    $(this).parents('.sticky-nav').find('#close-sticky-menu').addClass('show-close');
+    $(this).parents('.sticky-nav').addClass('display');
+});
+
+$('#phoneCall').on('click', function () {
+    $('.sticky-nav-call').css('display', 'flex');
+    $('.sticky-nav-quote').css('display', 'none');
+});
+
+$('#quote').on('click', function () {
+    $('.sticky-nav-call').css('display', 'none');
+    $('.sticky-nav-quote').css('display', 'block');
+});
+
+$('#close-sticky-menu').on('click', function () {
+    $(this).parents('.sticky-nav').removeClass('display');
+    $(this).removeClass('show-close');
+});

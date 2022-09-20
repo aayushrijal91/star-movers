@@ -4,9 +4,65 @@ include __DIR__ . '/header.php';
 ?>
 
 <div class="sticky-nav">
-    <?= renderImg("nav-logo.png", 'logo', 'pb-4') ?>
-    <a href="tel:<?= $phone_number ?>" class="py-2"><?= renderImg("call-btn.png", "icons") ?></a>
-    <a href="#form" class="py-2"><?= renderImg("quote-btn.png", "icons") ?></a>
+    <a href="javascript:void(0)" class="close" id="close-sticky-menu"><?= renderImg('close.png', 'icons') ?></a>
+    <div class="sticky-nav-menu">
+        <?= renderImg("nav-logo.png", 'logo', 'pb-4') ?>
+        <a href="javascript:void(0)" id="phoneCall" class="sticky-nav-btn py-2"><?= renderImg("call-btn.png", "icons") ?></a>
+        <a href="javascript:void(0)" id="quote" class="sticky-nav-btn py-2"><?= renderImg("quote-btn.png", "icons") ?></a>
+    </div>
+    <div class="sticky-nav-options">
+        <div class="sticky-nav-call">
+            <div class="heading">Contact an expert<br> removalist today!</div>
+            <div class="fs-5 text-grey1 fw-600 pt-3">Call us!</div>
+            <a href="tel:<?= $phone_number ?>" class="btn sticky-btn"><?= $phone_number ?></a>
+            <div class="fs-5 text-grey1 fw-600 pt-3">Email us!</div>
+            <a href="mailto:<?= $admin_email ?>" class="btn p-0 fs-4 fw-600 text-primary1"><?= $admin_email ?></a>
+        </div>
+        <div class="sticky-nav-quote">
+            <form action="./src/form" class="" method="post">
+                <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse">
+    
+                <div class="form-wrapper">
+                    <div class="form-heading purple">
+                        Your move
+                    </div>
+                    <div class="row g-3 pt-5 pb-4">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="pickUpAddress" name="pickup_address" placeholder="Pick up address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="dropOffAddress" name="dropoff_address" placeholder="Drop off address" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="date" class="form-control" name="date" placeholder="Pick up address" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="number" class="form-control" name="numberof_rooms" placeholder="No. of rooms" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form-heading orange">
+                        Your details
+                    </div>
+                    <div class="row pt-5 g-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" name="phone" placeholder="Phone no." required>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" name="email" placeholder="Email address" required>
+                        </div>
+                        <div class="col-12">
+                            <button class="form-control btn orange-btn" type="submit">Get Free Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
 <div class="sticky-nav-mobile">
@@ -21,7 +77,9 @@ include __DIR__ . '/header.php';
     </div>
 </div>
 
-<div class="shutter"></div>
+<div class="shutter">
+    <?= renderImg('animated-logo.gif', 'logo', 'animated-logo') ?>
+</div>
 
 <header>
     <div class="container text-center position-relative" style="z-index: 100;">
@@ -379,7 +437,7 @@ include __DIR__ . '/header.php';
 
     <div class="container">
         <form action="./src/form" class="" method="post">
-            <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+            <input type="hidden" name="token" id="recaptchaResponse2" class="recaptchaResponse">
 
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
