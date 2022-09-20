@@ -4,8 +4,8 @@
 			<div class="col-4 d-lg-none text-center">
 				<?= renderImg("footer-logo.png", "logo") ?>
 			</div>
-			<div class="col-12 col-lg-auto py-4 py-lg-0">
-				<div class="row gx-2 gx-md-3 text-grey2 justify-content-center">
+			<div class="col-12 col-md-auto col-lg py-4 py-lg-0">
+				<div class="row gx-2 gx-md-3 text-grey2 justify-content-center justify-content-lg-start">
 					<div class="col-auto text-center">Copyright <?= date('Y') ?></div>
 					<div class="col-auto">|</div>
 					<div class="col-auto text-center"><?= $site ?></div>
@@ -17,7 +17,7 @@
 			<div class="col-auto d-none d-lg-block">
 				<?= renderImg("footer-logo.png", "logo") ?>
 			</div>
-			<div class="col-4 col-lg-auto text-center">
+			<div class="col-4 col-md-auto col-lg text-center text-lg-end">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 					<?= renderImg("aiims.png", "logo") ?>
 				</a>

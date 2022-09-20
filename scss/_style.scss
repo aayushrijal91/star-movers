@@ -28,7 +28,7 @@
     @include media-breakpoint-up(md) {
         display: none;
     }
-    
+
     .mobile-icons {
         width: 40px;
     }
@@ -68,7 +68,7 @@ header {
     box-shadow: inset 0px 0px 69.5791px rgba(0, 0, 0, 0.15), inset 0px 0px 16.0567px 2.14089px rgba(0, 0, 0, 0.12);
     position: relative;
 
-    @include media-breakpoint-down(xxl) {
+    @include media-breakpoint-down(xl) {
         padding: 113px 0 550px;
     }
 
@@ -110,6 +110,10 @@ header {
         left: 1rem;
         bottom: -4px;
 
+        img {
+            animation: translation 3s infinite linear;
+        }
+
         @include media-breakpoint-down(lg) {
             display: none;
         }
@@ -121,8 +125,26 @@ header {
         bottom: -10rem;
         z-index: 100;
 
+        img {
+            animation: translation 3s infinite linear;
+        }
+
         @include media-breakpoint-down(xl) {
             display: none;
+        }
+    }
+
+    @keyframes translation {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-3rem);
+        }
+
+        100% {
+            transform: translateY(0);
         }
     }
 
@@ -160,8 +182,12 @@ section.participating-brands {
 }
 
 section.about-us {
-    @include media-breakpoint-up(xl) {
-        background: imgUrl('about-us-box.png') $light1;
+    background: $light1;
+
+    .about-us-box {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .about-us-container {
@@ -170,7 +196,7 @@ section.about-us {
         @include media-breakpoint-up(md) {
             background: imgUrl('about-us-star.png') center;
         }
-        
+
         @include media-breakpoint-up(lg) {
             padding: 234px 16px;
         }
@@ -218,6 +244,8 @@ section.cta {
 
     @include media-breakpoint-down(sm) {
         padding: 109px 0 242px;
+        background: imgUrl('cta-sm.jpg');
+        background-size: cover;
     }
 
     .cta-slider {

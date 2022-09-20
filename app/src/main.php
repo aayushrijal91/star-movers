@@ -44,10 +44,10 @@ include __DIR__ . '/header.php';
             <div class="col-md-9 col-lg-7">
                 <div class="row justify-content-center gy-3">
                     <div class="col-8 col-md">
-                        <a href="#" class="btn orange-btn">Exploring Services</a>
+                        <a href="#services" class="btn orange-btn">Exploring Services</a>
                     </div>
                     <div class="col-8 col-md">
-                        <a href="#" class="btn purple-btn">Get Free Quote</a>
+                        <a href="#form" class="btn purple-btn">Get Free Quote</a>
                     </div>
                 </div>
             </div>
@@ -80,9 +80,6 @@ include __DIR__ . '/header.php';
 </section>
 
 <section class="about-us position-relative">
-    <div class="marquee-truck">
-        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
-    </div>
     <div class="container about-us-container">
         <div class="row">
             <div class="col-lg-6" data-aos="fade-right">
@@ -97,6 +94,10 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </div>
+    <div class="about-us-box" id="about-us-box"><?= renderImg('about-us-box.png', "background") ?></div>
+    <div class="marquee-truck">
+        <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
+    </div>
 </section>
 
 <section class="cta position-relative">
@@ -109,22 +110,22 @@ include __DIR__ . '/header.php';
             <div class="cta-slider-content">
                 <div class="heading fs-3">Best Prices in Sydney</div>
                 <div class="description">We will provide you with the lowest price possible and we will beat any genuine and reasonable quote.</div>
-                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content top-margin">
                 <div class="heading fs-3">Team of Expert Movers</div>
                 <div class="description">We have a highly trained team of movers looking after your move, as we treat your furniture and assets with utmost care.</div>
-                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content">
                 <div class="heading fs-3">Latest Equipment</div>
                 <div class="description">All our trucks are equipped with the latest equipment to help you transport your assets safely to your new home.</div>
-                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
             <div class="cta-slider-content top-margin">
                 <div class="heading fs-3">Boxes & Wrap</div>
                 <div class="description">Our packaging specialists will pack and wrap everything that you desire for safe travel between your destinations.</div>
-                <a href="#" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
             </div>
         </div>
     </div>
@@ -152,26 +153,26 @@ include __DIR__ . '/header.php';
             <div class="col-xxl-10 d-none d-md-block">
                 <div class="deals-wrapper" data-aos="fade-right">
                     <?= renderImg("small-move.jpg", 'lib', "w-100") ?>
-                    <a href="#" class="btn orange-btn">Claim Now</a>
+                    <a href="#form" class="btn orange-btn">Claim Now</a>
                 </div>
                 <div class="deals-wrapper mt-8" data-aos="fade-left">
                     <?= renderImg("large-move.jpg", 'lib', "w-100") ?>
-                    <a href="#" class="btn orange-btn">Claim Now</a>
+                    <a href="#form" class="btn orange-btn">Claim Now</a>
                 </div>
             </div>
             <div class="col-12 d-md-none">
                 <div data-aos="fade-right">
-                    <a href="#" class=""><?= renderImg("small-move-sm.png", 'lib', "w-100") ?></a>
+                    <a href="#form" class=""><?= renderImg("small-move-sm.png", 'lib', "w-100") ?></a>
                 </div>
                 <div class="mt-6" data-aos="fade-left">
-                    <a href="#" class=""><?= renderImg("large-move-sm.png", 'lib', "w-100") ?></a>
+                    <a href="#form" class=""><?= renderImg("large-move-sm.png", 'lib', "w-100") ?></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="removal-type position-relative">
+<section class="removal-type position-relative" id="services">
     <div class="marquee-truck">
         <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
     </div>
@@ -378,6 +379,8 @@ include __DIR__ . '/header.php';
 
     <div class="container">
         <form action="./src/form" class="" method="post">
+            <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="heading fs-2">
@@ -510,7 +513,7 @@ include __DIR__ . '/header.php';
             <div class="col-8 col-md-auto"><?= renderImg("google-reviews.png", "lib") ?></div>
             <div class="col-auto pt-5 pt-md-0">
                 <div>
-                    <a href="#" class="btn orange-btn px-5">Leave a Review</a>
+                    <a href="https://www.google.com/maps/place/star+movers/@-33.8148372,151.0012464,15z/data=!4m2!3m1!1s0x0:0x6f90101cc8169caa?sa=X&ved=2ahUKEwjMqpfZurv5AhU7RmwGHWTgACkQ_BJ6BAhhEAU" class="btn orange-btn px-5">Leave a Review</a>
                 </div>
                 <div class="text-italic text-md-center fs-4 pt-4 text-grey2">It really helps us!</div>
             </div>

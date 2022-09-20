@@ -1,6 +1,6 @@
 AOS.init({ duration: 1000 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#services"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -118,8 +118,9 @@ $(() => {
 
     let timeline = new TimelineMax();
 
-    timeline.to('#banner-box-1', 6, { y: -100 })
-        .to('#banner-box-2', 6, { y: -400 }, '-=6');
+    timeline.to('#banner-box-1', 6, { y: -800 })
+        .to('#banner-box-2', 6, { y: -900 }, '-=6')
+        .to('#about-us-box', 6, { y: -800 }, '-=6');
 
     let scene = new ScrollMagic.Scene({
         triggerElement: 'header',
@@ -129,6 +130,8 @@ $(() => {
         .setTween(timeline)
         .addTo(controller);
 
+
+    AOS.refresh();
 
     const cards = gsap.utils.toArray(".removal-type-card");
 
