@@ -425,11 +425,6 @@ section.service {
         @include media-breakpoint-down(xxl) {
             display: none;
         }
-
-        // @include media-breakpoint-down(sm) {
-        //     top: -280px;
-        //     left: 10%;
-        // }
     }
 
     .service-card {
