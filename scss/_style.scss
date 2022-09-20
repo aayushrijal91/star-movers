@@ -406,7 +406,7 @@ section.exclusive-deals {
     }
 }
 
-section.removal-type {
+section.service {
     background-color: $light1;
     padding: 148px 0 300px;
     overflow-y: hidden;
@@ -420,19 +420,25 @@ section.removal-type {
         position: absolute;
         top: 0;
         left: -45%;
+        overflow: hidden;
 
         @include media-breakpoint-down(xxl) {
             display: none;
         }
+
+        // @include media-breakpoint-down(sm) {
+        //     top: -280px;
+        //     left: 10%;
+        // }
     }
 
-    .removal-type-card {
+    .service-card {
         background: linear-gradient(79.26deg, #7C49F8 0%, #F88D36 101.18%);
         box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.12);
         border-radius: 5px;
         color: $white;
 
-        .removal-type-card-inner {
+        .service-card-inner {
             @include media-breakpoint-down(xl) {
                 padding: 48px 48px 0;
             }

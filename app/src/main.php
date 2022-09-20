@@ -172,7 +172,7 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="removal-type position-relative" id="services">
+<section class="service position-relative" id="services">
     <div class="marquee-truck">
         <marquee behavior="scroll" direction="down" scrollamount="10"><?= renderImg("moving-truck.png", 'lib') ?></marquee>
     </div>
@@ -182,9 +182,9 @@ include __DIR__ . '/header.php';
     </div>
 
     <div class="container">
-        <div class="removal-type-wrapper">
-            <div class="removal-type-card" style="top: 10px">
-                <div class="row removal-type-card-inner">
+        <div class="service-wrapper">
+            <div class="service-card" style="top: 10px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
@@ -214,8 +214,8 @@ include __DIR__ . '/header.php';
                 <?= renderImg('removal-1-sm.png', 'lib', 'w-100 w-md-auto d-xl-none') ?>
             </div>
 
-            <div class="removal-type-card" style="top: 30px">
-                <div class="row removal-type-card-inner">
+            <div class="service-card" style="top: 30px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
@@ -245,8 +245,8 @@ include __DIR__ . '/header.php';
                 <?= renderImg('removal-2-sm.png', 'lib', 'w-100 d-xl-none') ?>
             </div>
 
-            <div class="removal-type-card" style="top: 50px">
-                <div class="row removal-type-card-inner">
+            <div class="service-card" style="top: 50px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
@@ -276,8 +276,8 @@ include __DIR__ . '/header.php';
                 <?= renderImg('removal-3-sm.png', 'lib', 'w-100 d-xl-none') ?>
             </div>
 
-            <div class="removal-type-card" style="top: 70px">
-                <div class="row removal-type-card-inner">
+            <div class="service-card" style="top: 70px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
@@ -307,8 +307,8 @@ include __DIR__ . '/header.php';
                 <?= renderImg('removal-4-sm.png', 'lib', 'w-100 d-xl-none') ?>
             </div>
 
-            <div class="removal-type-card" style="top: 90px">
-                <div class="row removal-type-card-inner">
+            <div class="service-card" style="top: 90px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>
@@ -338,8 +338,8 @@ include __DIR__ . '/header.php';
                 <?= renderImg('removal-5-sm.png', 'lib', 'w-100 d-xl-none') ?>
             </div>
 
-            <div class="removal-type-card" style="top: 110px">
-                <div class="row removal-type-card-inner">
+            <div class="service-card" style="top: 110px">
+                <div class="row service-card-inner">
                     <div class="col-12 d-xl-none">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto fw-300">Our specialities</div>

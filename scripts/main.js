@@ -133,7 +133,7 @@ $(() => {
 
     AOS.refresh();
 
-    const cards = gsap.utils.toArray(".removal-type-card");
+    const cards = gsap.utils.toArray(".service-card");
 
     cards.forEach((card, index) => {
         const tween = gsap.to(card, {
