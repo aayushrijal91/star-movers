@@ -265,3 +265,9 @@ $('#close-sticky-menu').on('click', function () {
     $(this).parents('.sticky-nav').removeClass('display');
     $(this).removeClass('show-close');
 });
+
+$('.scroll-down-cta').on('click', function() {
+    $(this).parents('.cta-slider-content').find('.pre').toggleClass('slide');
+
+    $(this).parents('.cta-slider-content').find('.post').toggleClass('slide');
+})

@@ -21,7 +21,7 @@ include __DIR__ . '/header.php';
         <div class="sticky-nav-quote">
             <form action="./src/form" class="" method="post">
                 <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse">
-    
+
                 <div class="form-wrapper">
                     <div class="form-heading purple">
                         Your move
@@ -166,24 +166,64 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="cta-slider" id="cta-slider">
             <div class="cta-slider-content">
-                <div class="heading fs-3">Best Prices in Sydney</div>
-                <div class="description">We will provide you with the lowest price possible and we will beat any genuine and reasonable quote.</div>
-                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <div class="post slide">
+                    <div><?= renderImg('dollar.png', 'lib') ?></div>
+                    <div class="heading fs-3">Without sacrificing quality &amp; care</div>
+                </div>
+                <div class="pre slide">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="heading fs-3">Best Prices in Sydney</div>
+                        <div class="description">We will provide you with the lowest price possible and we will beat any genuine and reasonable quote.</div>
+                    </div>
+                </div>
+                <div class="scroll-down-btn-wrapper">
+                    <a href="javascript:void(0)" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                </div>
             </div>
             <div class="cta-slider-content top-margin">
-                <div class="heading fs-3">Team of Expert Movers</div>
-                <div class="description">We have a highly trained team of movers looking after your move, as we treat your furniture and assets with utmost care.</div>
-                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <div class="post slide">
+                    <div><?= renderImg('boots.png', 'lib') ?></div>
+                    <div class="heading fs-3">All qualified with minimum 5 years experience</div>
+                </div>
+                <div class="pre slide">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="heading fs-3">Team of Expert Movers</div>
+                        <div class="description">We have a highly trained team of movers looking after your move, as we treat your furniture and assets with utmost care.</div>
+                    </div>
+                </div>
+                <div class="scroll-down-btn-wrapper">
+                    <a href="javascript:void(0)" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                </div>
             </div>
             <div class="cta-slider-content">
-                <div class="heading fs-3">Latest Equipment</div>
-                <div class="description">All our trucks are equipped with the latest equipment to help you transport your assets safely to your new home.</div>
-                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <div class="post slide">
+                    <div><?= renderImg('trolley.png', 'lib') ?></div>
+                    <div class="heading fs-3">All qualified with minimum 5 years experience</div>
+                </div>
+                <div class="pre slide">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="heading fs-3">Latest Equipment</div>
+                        <div class="description">All our trucks are equipped with the latest equipment to help you transport your assets safely to your new home.</div>
+                    </div>
+                </div>
+                <div class="scroll-down-btn-wrapper">
+                    <a href="javascript:void(0)" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                </div>
             </div>
             <div class="cta-slider-content top-margin">
-                <div class="heading fs-3">Boxes & Wrap</div>
-                <div class="description">Our packaging specialists will pack and wrap everything that you desire for safe travel between your destinations.</div>
-                <a href="#form" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                <div class="post slide">
+                    <div><?= renderImg('toys.png', 'lib') ?></div>
+                    <div class="heading fs-3">We also disassemble &amp; assemble furniture</div>
+                </div>
+                <div class="pre slide">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="heading fs-3">Boxes & Wrap</div>
+                        <div class="description">Our packaging specialists will pack and wrap everything that you desire for safe travel between your destinations.</div>
+                    </div>
+                </div>
+                <div class="scroll-down-btn-wrapper">
+                    <a href="javascript:void(0)" class="scroll-down-cta"><?= renderImg('scroll-down-cta.png', 'icons') ?></a>
+                </div>
             </div>
         </div>
     </div>
