@@ -441,10 +441,6 @@ section.cta {
             height: 540px;
             overflow: hidden;
             border-radius: 169.5px;
-            // display: flex;
-            // justify-content: center;
-            // flex-direction: column;
-            // align-items: center;
             
             @include media-breakpoint-down(sm) {
                 height: 504px;
@@ -472,13 +468,16 @@ section.cta {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 15px 39px;
                 text-align: center;
                 height: inherit;
                 transition: 0.2s all ease-in-out;
 
                 &.slide {
                     transform: translateY(-100%);
+                }
+                
+                .heading {
+                    padding: 24px 42px 0;
                 }
             }
 
@@ -486,6 +485,7 @@ section.cta {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 15px 39px;
                 text-align: center;
                 transition: 0.2s all ease-in-out;
                 height: inherit;
@@ -494,9 +494,6 @@ section.cta {
                     transform: translateY(-100%);
                 }
 
-                .heading {
-                    padding: 24px 42px 0;
-                }
             }
 
             .heading {
